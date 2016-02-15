@@ -34,3 +34,23 @@ console.log(s.toUpperCase());
 
 console.log(s[0]);
 console.log(s[s.length-1]);
+
+console.log("".charAt(0));
+console.log("" [0]);
+
+var str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, " +
+  "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+var target = "ma";
+
+var pos = 0;
+
+while (true) {
+  var foundPos = str.indexOf(target, pos);
+  if (foundPos == -1) {
+    break;
+  }
+  console.log( foundPos );
+  pos = foundPos + 1;
+}
+
+console.log(str.length);
